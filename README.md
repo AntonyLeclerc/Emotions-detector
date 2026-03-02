@@ -19,7 +19,7 @@ For inference, I am using opencv-python and a VideoCapture object, then turning 
 Loss function was CrossEntropy.  
 The optimizer was the Adam optimizer with a learning rate of 0.0003.  
 
-The model has been trained on kaggle with the emotions.ipynb notebook file. Feel free 
+The model has been trained on kaggle with the emotions.ipynb notebook file. Feel free to explore it !
 
 Learning curves : 
 
