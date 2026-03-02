@@ -54,7 +54,7 @@ classes = ["angry","disgust","fear","happy","neutral","sad", "surprise"]
 
 # initialize and load the model
 my_model = Net()
-my_model.load_state_dict(torch.load("model3.pkl", weights_only=True))
+my_model.load_state_dict(torch.load("model.pkl", weights_only=True))
 my_model.eval()
 
 
