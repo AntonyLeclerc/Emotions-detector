@@ -2,3 +2,4 @@ emotion.py
 __pycache__/
 mymodel.pkl
 weights_flip.pkl
+emotion1.py
