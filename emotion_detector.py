@@ -38,7 +38,7 @@ fourcc = cv2.VideoWriter_fourcc(*'XVID')
 
 # if a record is required
 if args.record:
-    writer = cv2.VideoWriter(f"{args.filename}.avi", fourcc, framerate*1.0, (frame_width, frame_height))
+    writer = cv2.VideoWriter(f"{args.filename}.avi", fourcc, 18.0, (frame_width, frame_height))
 
 
 # some image manipulation function
@@ -54,7 +54,7 @@ classes = ["angry","disgust","fear","happy","neutral","sad", "surprise"]
 
 # initialize and load the model
 my_model = Net()
-my_model.load_state_dict(torch.load("mymodel.pkl", weights_only=True))
+my_model.load_state_dict(torch.load("model3.pkl", weights_only=True))
 my_model.eval()
 
 

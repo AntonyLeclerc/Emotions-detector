@@ -34,7 +34,8 @@ class Net(nn.Module):
 
     self.s2 = nn.MaxPool2d(kernel_size=2, stride=2)
 
-    self.fc1 = nn.Linear(1152,7)
+    self.fc1 = nn.Linear(1152,128)
+    self.fc2 = nn.Linear(128,7)
 
 
   def forward(self, x):
@@ -50,6 +51,8 @@ class Net(nn.Module):
 
     x = torch.flatten(x, 1)
 
-    #x = F.relu(self.fc1(x))
-    x = self.fc1(x)
+    x = F.relu(self.fc1(x))
+    x = self.fc2(x)
     return x
+
+
