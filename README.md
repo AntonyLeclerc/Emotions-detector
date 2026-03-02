@@ -13,3 +13,4 @@ Scattered among 7 different classes: Angry / Disgust / Fear / Happy / Neutral / 
 
 For inference, I am using my opencv-python and a VideoCapture object, then turning the image into grayscale and resizing it to a 48x48 dimension (image dimensions in the FER-2013 dataset).
 
+The model has been trained on kaggle with the emotions.ipynb notebook file.
