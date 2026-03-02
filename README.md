@@ -9,8 +9,18 @@ My model (mymodel.pkl) has been trained on the FER-2013 dataset, consisting of:
 
 Scattered among 7 different classes: Angry / Disgust / Fear / Happy / Neutral / Sad / Surprise
 
+The dataset is the FER-2013 dataset available on Kaggle.
+https://www.kaggle.com/datasets/msambare/fer2013
+
 ---
 
-For inference, I am using my opencv-python and a VideoCapture object, then turning the image into grayscale and resizing it to a 48x48 dimension (image dimensions in the FER-2013 dataset).
+For inference, I am using opencv-python and a VideoCapture object, then turning the captured image into grayscale and resizing it to a 48x48 dimension (image dimensions in the FER-2013 dataset).
 
-The model has been trained on kaggle with the emotions.ipynb notebook file.
+Loss function was CrossEntropy.  
+The optimizer was the Adam optimizer with a learning rate of 0.0003.  
+
+The model has been trained on kaggle with the emotions.ipynb notebook file. Feel free 
+
+Learning curves : 
+
+![image](acc_loss.png)
