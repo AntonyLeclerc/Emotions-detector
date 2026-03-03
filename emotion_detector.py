@@ -58,7 +58,7 @@ my_model.load_state_dict(torch.load("model.pkl", weights_only=True))
 my_model.eval()
 
 
-while True:
+while ret:
     ret, frame = cam.read()
 
     if not(ret):
