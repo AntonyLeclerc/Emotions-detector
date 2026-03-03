@@ -24,3 +24,5 @@ The model has been trained on kaggle with the emotions.ipynb notebook file. Feel
 Learning curves : 
 
 ![image](acc_loss.png)
+
+<img src="demo.gif">
